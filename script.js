@@ -30,3 +30,19 @@ let resultsPounds = document.getElementById('results-pounds');
 console.log(resultsPounds.textContent);
 let resultsKilos = document.getElementById('results-kilos');
 console.log(resultsKilos.textContent);
+
+// Fetching the value input by the user
+const userInput = document.querySelector('#userInput');
+let userValue = userInput.value;
+console.log(userValue);
+
+// Adding an event to the button
+const btnConvertor = document.querySelector("#btn-convert");
+// console.log(btnConvertor);
+btnConvertor.addEventListener('click', function(){
+   
+    // Length (Meter to feet)
+    // 1 meter = 3.281 feet
+    inputMeters.textContent = userValue;
+    resultsFeets.textContent = userValue * 3.281;
+});
