@@ -36,13 +36,69 @@ const userInput = document.querySelector('#userInput');
 let userValue = userInput.value;
 console.log(userValue);
 
+// Length (Meter to feet)
+function meterAndFeet() {
+    // Length (Meter to feet)
+    // 1 meter = 3.281 feet
+    inputMeters.textContent = userValue;
+    resultsFeets.textContent = (userValue * 3.281).toFixed(3);
+     // Length (Feet to meter)
+     inputFeets.textContent = userValue;
+     resultsMeters.textContent = (userValue / 3.281).toFixed(3);
+
+}
+
+// Volume (Liters to Gallons)
+function literAndGallon() {
+    // Volume (Liters to Gallons)
+    // 1 liter = 0.2642 gallons
+    inputLiters.textContent = userValue;
+    resultsGallons.textContent = (userValue * 0.2642).toFixed(3);
+    // Volume (Gallons to Liters)
+     inputGallons.textContent = userValue;
+     resultsLiters.textContent = (userValue / 0.2642).toFixed(3);
+}
+
+function kilogramsAndPounds() {
+     // Mass (Kilograms to Pounds)
+    //  1 kg = 2.2 pounds
+    inputKilos.textContent = userValue;
+    resultsPounds.textContent = (userValue * 2.2).toFixed(3);
+    // Mass (Pounds to Kilograms)
+    inputPounds .textContent = userValue;
+    resultsKilos.textContent = (userValue / 2.2).toFixed(3);    
+}
+
 // Adding an event to the button
 const btnConvertor = document.querySelector("#btn-convert");
 // console.log(btnConvertor);
 btnConvertor.addEventListener('click', function(){
-   
-    // Length (Meter to feet)
-    // 1 meter = 3.281 feet
-    inputMeters.textContent = userValue;
-    resultsFeets.textContent = userValue * 3.281;
+
+    // // Length (Meter to feet)
+    // // 1 meter = 3.281 feet
+    // inputMeters.textContent = userValue;
+    // resultsFeets.textContent = (userValue * 3.281).toFixed(3);
+    //  // Length (Feet to meter)
+    //  inputFeets.textContent = userValue;
+    //  resultsMeters.textContent = (userValue / 3.281).toFixed(3);
+
+    // // Volume (Liters to Gallons)
+    // // 1 liter = 0.2642 gallons
+    // inputLiters.textContent = userValue;
+    // resultsGallons.textContent = (userValue * 0.2642).toFixed(3);
+    // // Volume (Gallons to Liters)
+    //  inputGallons.textContent = userValue;
+    //  resultsLiters.textContent = (userValue / 0.2642).toFixed(3);
+
+    //  // Mass (Kilograms to Pounds)
+    // //  1 kg = 2.2 pounds
+    //  inputKilos.textContent = userValue;
+    //  resultsPounds.textContent = (userValue * 2.2).toFixed(3);
+    //  // Mass (Pounds to Kilograms)
+    //  inputPounds .textContent = userValue;
+    //  resultsKilos.textContent = (userValue / 2.2).toFixed(3);
+
+    meterAndFeet();
+    literAndGallon();
+    kilogramsAndPounds();
 });
