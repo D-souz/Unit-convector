@@ -22,7 +22,7 @@ body {
 #cal-section {
     background-color: #1F2937;
     width: 550px;
-    height: 300px;
+    height: 380px;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -68,4 +68,14 @@ input[type=text]:focus {
     background: transparent;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border-radius: 3px;
+}
+
+@media screen and (max-width: 620px){
+    h3 {
+        font-size: 19px;
+    }
+    #container {
+        margin-top: 15%;
+    }
+  
 }
